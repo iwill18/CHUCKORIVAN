@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainFragment">
+
+    <RelativeLayout
+        android:id="@+id/joke_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/random_joke_btn"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="213dp"
+            android:layout_marginEnd="102dp"
+            android:text="@string/joke_btn_label"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/joke_list_enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginBottom="632dp"
+            android:alpha="0.2"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Here's Some of my Jokes Since U Don't Have Any !@!"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/random_joke_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="267dp"
+            tools:src="@mipmap/iw" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-8dp"
+            android:layout_marginBottom="143dp"
+            android:text="Click The Chuck Norris Image in the Corner To Change Your Life. Hurry, There's Not Much Time Yet!~!"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/joke_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/joke_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/joke_list_loading"
+            style="?android:attr/progressBarStyleSmall"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/joke_list_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:alpha="0.2"
+        app:backgroundTint="@color/black"
+        android:text="Please Go Back Home"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

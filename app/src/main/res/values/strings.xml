@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chuck or Who</string>
+    <string name="joke_btn_label">Why Random?!?</string>
+    <string name="joke_btn_loading_label">Give Me A Sec...</string>
+    <string name="edit_last_name_label">Last Name</string>
+    <string name="edit_first_name_label">First Name</string>
+    <string name="edit_first_name_input_hint">Chuck</string>
+    <string name="edit_last_name_input_hint">Norris</string>
+    <string name="edit_filter_label">Stop Being So Bad!%!</string>
+    <string name="edit_filter_explicit_label">No Explicit</string>
+    <string name="edit_name_label">Tell Me Your Name!*!</string>
+</resources>
